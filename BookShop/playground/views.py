@@ -6,5 +6,12 @@ from django.http import HttpResponse
 # request handler
 # action
 
-def say_hello(request):
-    return HttpResponse("Hello, Emmanuel Kotoka is enjoying Django!")
+
+def hompage(request):
+    return render(request, "home.html")
+    # return HttpResponse("Hello World! I'm Home")
+
+
+def about(request):
+    return render(request, "about.html")
+    # return HttpResponse("About Me")
